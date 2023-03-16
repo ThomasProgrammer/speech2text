@@ -7,7 +7,7 @@ st.title("🎙️➡📄 Speech to text convertor")
 column_1, column_2, column_3 = st.columns([2, 4, 1])
 
 api_key = column_1.text_input("OpenAI API key", help="https://platform.openai.com/account/api-keys")
-audio_file = column_2.file_uploader("Upload your audio file here", type=["mp3", "mp4", "mpeg", "mpga", "m4a", "wav", "webm"], accept_multiple_files=False)
+audio_file = column_2.file_uploader("Upload your audio file here", type=["mp3", "mp4", "mpeg", "mpga", "m4a", "wav", "webm"], accept_multiple_files=False, help="Please upload only files smaller than 25 MB. Support for this will be added later.")
 
 
 if api_key != "" and audio_file is not None:
