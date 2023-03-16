@@ -2,7 +2,7 @@ import streamlit as st
 
 from speech2text import speech2text
 
-st.title("Speech to text convertor")
+st.title("🎙️➡📄 Speech to text convertor")
 
 column_1, column_2, column_3 = st.columns([2, 4, 1])
 
